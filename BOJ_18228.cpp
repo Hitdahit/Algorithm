@@ -1,3 +1,4 @@
+// https://www.acmicpc.net/problem/18228
 #include <iostream>
 #include <vector>
 #include <utility>
