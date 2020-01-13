@@ -6,7 +6,6 @@
 #include <algorithm>
 using namespace std;
 typedef pair<int, int> pii;
-
 int n, e, p;
 int main()
 {
@@ -21,16 +20,15 @@ int main()
 		if (i < p) comb[i] = 0;
 		else comb[i] = 1;
 	}
-	
+
 	for (int i = 0; i < n; i++) {
 		cin >> x >> y;
 		v.push_back(make_pair(y, x));
 	}
-	
+
 	int hap = 0;
 	do {
 		hap = 0;
-		
 		for (int i = 0; i < n; i++) {
 			if (!comb[i]) hap += v[i].second;
 		}
@@ -49,9 +47,10 @@ int main()
 	}
 	int flag = 0;
 	while (e != hap) {
+		flag = 0;
 		for (int i = 0; i < n; i++) {
-			if (ans[i]) 
-				if (v[i].first > ans[i] && hap!=20) {
+			if (ans[i])
+				if (v[i].first > ans[i] && hap != e) {
 					ans[i]++;
 					hap++; flag = 1;
 				}
@@ -63,7 +62,7 @@ int main()
 	}
 
 	for (int i = 0; i < n; i++) {
-		cout << ans[i]<<" ";
+		cout << ans[i] << " ";
 	}
 
 }
