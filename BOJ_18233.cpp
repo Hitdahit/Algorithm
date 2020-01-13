@@ -30,7 +30,7 @@ int main()
 	do {
 		hap = 0;
 		for (int i = 0; i < n; i++) {
-			if (!comb[i]) hap += v[i].second;
+			if (!comb[i]) hap += v[i].second;  //n개 중 p개 뽑는 조합.
 		}
 		if (hap <= e) {
 			for (int i = 0; i < n; i++) {
