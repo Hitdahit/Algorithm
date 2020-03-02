@@ -1,5 +1,6 @@
 //#include <bits/stdc++.h>
-
+//i implemented insert function and erase function 
+//from https://github.com/blisstoner/basic-algo-lecture-metarial/blob/master/0x03/array_test.cpp
 #include <iostream>
 using namespace std;
 
